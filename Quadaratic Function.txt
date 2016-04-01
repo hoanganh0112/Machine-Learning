@@ -1,0 +1,3 @@
+Quadratic function: 1 duong cong
+- fw(X) =  W0 + W1*X + W2*X^2
+=> still linear regression

@@ -1,0 +1,16 @@
+- Instead of analysis the observations, we think about modeling the relationship between the square footage of the house and the house sales price => use linear regression
+#Method:
+- Fitting a line through the data
+- This line is defined by:
+	fw(x) = W0 + W1*X 
+	W0: intercept 
+	slope: W1 => the weight on the feature X or regression coefficient
+- RSS (residual sum of squares) => to use for dedicate the best line for model
+	RSS = ($house1-[W0+W1sq.ft.house1])^2 + ($house2-[W0+W1sq.ft.house2])^2 + ($house3-[W0+W1sq.ft.house3])^2 + ($housen-[W0+W1sq.ft.housen])^2
+        => the minus mean the difference between our observed house price vs what our model
+- We choose the one minimizes the residual sum of squres
+- hat: for predicted value
+- Best guess of your house price:
+	+ Giong len the fit line tu vi tri nha cua minh
+	+ Ap dung cong thuc:
+		y^ = W0^ + W1^*sq.ft

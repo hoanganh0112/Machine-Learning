@@ -1,0 +1,15 @@
+#Definition:
+- One of the most widely used statiscal tools outs there
+- just thinking about doing prediction tasks
+- can use regression tools for classification
+#Idea:
+- Have some set of feartures and wanna model how our observations that are associated with these features change as we change the values of the features
+#Prdict house price
+- House's features: size, how many bedrooms, how many of bathrooms, ...
+- Plot house sales:
+	+ x axis => feature, covariate, predictor
+	+ y axis => observation or response
+- Looking for other sale house sold (y -axis) at the same size (x axis) => 0 co nha nao khac ngoai nha minh
+- Looking for average:
+	+ Lay 1 khoang nam tren do thi x ma trong do size cua nha minh nam o giua khoan do => chi co 2 nha => qua it
+
