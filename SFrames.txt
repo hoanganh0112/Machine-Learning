@@ -1,0 +1,35 @@
+- Tool for python to build applications that scale to lots of data
+- SFrame is a scalable data structure for dealing with big tables of data
+- Trong iPython Notebook:
+	+ import graphlab //including SFrame and any algorithms
+
+#Load a tabular data set
+- The data set is in any formats, eg: CSV format
+- sf = graphlab.SFrame('people-example.csv')
+
+#SFrame basics
+- sf #we can view first few lines of tables
+- sf.head() #we can view first few lines of tables
+- sf.tail() #we can view last few lines of tables
+
+#GraphLab Canvas
+- sf.show #help you to take a overall view of your data set with the new window in browser
+- graphlab.canvas.set_taget('ipynb') #load canvas to iPython Notebook
+- sf['#ten column'].show(view='#view muon show')
+
+#Inspect columns
+- sf['#ten cot']
+- sf['#ten cot'].mean() #tinh trung binh
+- sf['#ten cot'].max() #lay gia tri max
+
+#Add columns in SFrame
+- sf['#ten cot'] = sf["ten cot"] + ' ' + sf['#ten cot']
+
+#Use the apply function to do advanced transformation of data
+- def transform_country(country):
+    if country == 'USA':
+        return 'Untited States'
+    else:
+        return country
+- sf['Country'].apply(transform_country)
+
