@@ -1,0 +1,12 @@
+Linear classifiers
+	Main function: take all the words and weigh them
+	Take a training data to learn a weight for each words
+Threshold classifier:
+How to get list of positive/negative words
+Words have different degrees of centiment
+=> addressed by learning classifier 
+Single words are not enough
+=> addressed by more elaborate features
+
+Decision boundary:
+score(X) = 0
